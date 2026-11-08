@@ -2,10 +2,10 @@
 """Rebuild apps.json, the Homebrew Channel repository, from each app's latest GitHub release.
 
 Each app's release carries <id>.manifest.json, written by that app's build. Run this after
-publishing a release, then commit apps.json. Needs only Python 3.
+publishing a release, then commit apps.json. Needs Python 3 and curl.
 """
 import json
-import urllib.request
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -21,11 +21,14 @@ APPS = [
 
 def latest(app, repo):
     """The manifest URL of the latest release, with the version in it, and the manifest."""
-    req = urllib.request.Request("https://api.github.com/repos/%s/releases/latest" % repo,
-                                 headers={"Accept": "application/vnd.github+json", "User-Agent": "webos-homebrew"})
-    release = json.load(urllib.request.urlopen(req))
+    release = get("https://api.github.com/repos/%s/releases/latest" % repo)
     url = "https://github.com/%s/releases/download/%s/%s.manifest.json" % (repo, release["tag_name"], app)
-    return url, json.load(urllib.request.urlopen(url))
+    return url, get(url)
+
+
+def get(url):
+    return json.loads(subprocess.run(["curl", "-fsSL", "-A", "webos-homebrew", url], check=True,
+                                     stdout=subprocess.PIPE).stdout)
 
 
 def main():

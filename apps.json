@@ -1,0 +1,57 @@
+{
+  "paging": {
+    "page": 1,
+    "count": 2,
+    "maxPage": 1,
+    "itemsTotal": 2,
+    "itemsPerPage": 2
+  },
+  "packages": [
+    {
+      "id": "com.haywire.localvoice",
+      "title": "Local Voice",
+      "iconUri": "https://raw.githubusercontent.com/haywirephoenix/webos-localvoice/main/app/largeIcon.png",
+      "shortDescription": "Speech recognition that runs on the TV, for the remote's microphone button and apps with their own",
+      "pool": "main",
+      "fullDescriptionUrl": "https://haywirephoenix.github.io/webos-homebrew/descriptions/localvoice.html",
+      "manifestUrl": "https://github.com/haywirephoenix/webos-localvoice/releases/download/v0.4.1/com.haywire.localvoice.manifest.json",
+      "manifest": {
+        "id": "com.haywire.localvoice",
+        "version": "0.4.1",
+        "type": "web",
+        "title": "Local Voice",
+        "appDescription": "Speech recognition that runs on the TV, for the remote's microphone button and apps with their own",
+        "iconUri": "https://raw.githubusercontent.com/haywirephoenix/webos-localvoice/main/app/largeIcon.png",
+        "sourceUrl": "https://github.com/haywirephoenix/webos-localvoice",
+        "rootRequired": true,
+        "ipkUrl": "https://github.com/haywirephoenix/webos-localvoice/releases/download/v0.4.1/com.haywire.localvoice_0.4.1_all.ipk",
+        "ipkHash": {
+          "sha256": "520932f6e507c8d3273080b0070295bcbb8feb9a4c58fe04b949b83347b2ba99"
+        }
+      }
+    },
+    {
+      "id": "com.homebrew.tailscalectl",
+      "title": "Tailscale",
+      "iconUri": "https://raw.githubusercontent.com/haywirephoenix/webos-tailscale/main/tailscale-ctl/largeIcon.png",
+      "shortDescription": "Install, update and run Tailscale on the TV, with a status page and console. Not affiliated with Tailscale Inc.",
+      "pool": "main",
+      "fullDescriptionUrl": "https://haywirephoenix.github.io/webos-homebrew/descriptions/tailscale.html",
+      "manifestUrl": "https://github.com/haywirephoenix/webos-tailscale/releases/download/v1.2.3/com.homebrew.tailscalectl.manifest.json",
+      "manifest": {
+        "id": "com.homebrew.tailscalectl",
+        "version": "1.2.3",
+        "type": "web",
+        "title": "Tailscale",
+        "appDescription": "Install, update and run Tailscale on a rooted TV, with a status page and console",
+        "iconUri": "https://raw.githubusercontent.com/haywirephoenix/webos-tailscale/main/tailscale-ctl/largeIcon.png",
+        "sourceUrl": "https://github.com/haywirephoenix/webos-tailscale",
+        "rootRequired": true,
+        "ipkUrl": "https://github.com/haywirephoenix/webos-tailscale/releases/download/v1.2.3/com.homebrew.tailscalectl_1.2.3_all.ipk",
+        "ipkHash": {
+          "sha256": "73224d67185cba6ad67e17bcb7ad1eca200e8d859b5d510c0183f2e71fd2774e"
+        }
+      }
+    }
+  ]
+}
