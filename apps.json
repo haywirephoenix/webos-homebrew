@@ -37,19 +37,19 @@
       "shortDescription": "Install, update and run Tailscale on the TV, with a status page and console. Not affiliated with Tailscale Inc.",
       "pool": "main",
       "fullDescriptionUrl": "https://haywirephoenix.github.io/webos-homebrew/descriptions/tailscale.html",
-      "manifestUrl": "https://github.com/haywirephoenix/webos-tailscale/releases/download/v1.2.3/com.homebrew.tailscalectl.manifest.json",
+      "manifestUrl": "https://github.com/haywirephoenix/webos-tailscale/releases/download/v1.3.0/com.homebrew.tailscalectl.manifest.json",
       "manifest": {
         "id": "com.homebrew.tailscalectl",
-        "version": "1.2.3",
+        "version": "1.3.0",
         "type": "web",
         "title": "Tailscale",
         "appDescription": "Install, update and run Tailscale on a rooted TV, with a status page and console",
         "iconUri": "https://raw.githubusercontent.com/haywirephoenix/webos-tailscale/main/tailscale-ctl/largeIcon.png",
         "sourceUrl": "https://github.com/haywirephoenix/webos-tailscale",
         "rootRequired": true,
-        "ipkUrl": "https://github.com/haywirephoenix/webos-tailscale/releases/download/v1.2.3/com.homebrew.tailscalectl_1.2.3_all.ipk",
+        "ipkUrl": "https://github.com/haywirephoenix/webos-tailscale/releases/download/v1.3.0/com.homebrew.tailscalectl_1.3.0_all.ipk",
         "ipkHash": {
-          "sha256": "73224d67185cba6ad67e17bcb7ad1eca200e8d859b5d510c0183f2e71fd2774e"
+          "sha256": "c08de760851385b4b386af2f011b000540c36c2f413fefaaab5ebf7efc0488e2"
         }
       }
     }
